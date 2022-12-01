@@ -1,0 +1,1 @@
+repository for cv generation with latex

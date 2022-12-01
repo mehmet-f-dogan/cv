@@ -1,0 +1,254 @@
+% Preamble
+% Compile with XeLateX
+
+\documentclass[11 pt,oneside,a4paper,titlepage]{article}
+\usepackage{preamble}
+\graphicspath{{PIC/}}
+\begin{document}
+
+\sidebar
+{sideBarColor!8}
+
+\simpleheader
+{titleBackColor}
+{Mehmet Furkan}
+{DOGAN}
+{Computer Engineer}
+{white}
+
+\vspace*{3.49cm}
+\adjustbox
+{valign=t}
+{\begin{minipage}{7.3cm}
+		\vspace*{1.2cm}
+		\begin{center}
+			\begin{tikzpicture}
+				\node[
+					rectangle,
+					minimum size=\cvPictureWidth,
+					path picture={
+							\node at (path picture bounding box.center){
+								\includegraphics[width=\cvPictureWidth]{profile_pic.png}
+							};
+						}
+				]
+				{};
+			\end{tikzpicture}
+		\end{center}
+
+		\ruleline{\textbf{about}}
+		\begin{center}
+			Desktop and backend developer
+		\end{center}
+
+		\ruleline{\textbf{contact}}
+		\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+			\matrix [
+				column 1/.style={anchor=center,contactIcon},
+				column 2/.style={anchor=west,align=left,contactIcon},
+				column sep=5pt,
+				row sep=5pt] (contact) {
+				\node{\faEnvelope};
+				 & \node{\href{mailto:mehmet@mehmetfd.dev}{mehmet@mehmetfd.dev}}; \\
+				%\node{\faEnvelope};
+				% & \node{\href{mailto:mehmetfdogan.professional@gmail.com}{mehmetfdogan.professional@gmail.com}}; \\
+				\node{\faPhone};
+				 & \node{\href{tel:+491783916327}{+49 178 391 63 27 \flag{EU.png}}}; \\
+				%\node{\faPhone};
+				% & \node{\href{tel:+905433460188}{+90 543 346 01 88 \flag{Turkey.png}}}; \\
+				\node{\faMapMarker};
+				 & \node{10435 Berlin, Germany \flag{Germany.png}}; \\
+				\node{\faMapMarker};
+				 & \node{16130 Bursa, Turkey \flag{Turkey.png}}; \\
+				\node{\faGlobe};
+				 & \node{\href{https://www.mehmetfd.dev}{mehmetfd.dev}}; \\
+				\node{\faGithub};
+				 & \node{\href{https://github.com/mehmet-f-dogan}{mehmet-f-dogan}}; \\
+				\node{\faLinkedinSquare};
+				 & \node{\href{https://www.linkedin.com/in/mehmet-f-dogan}{in/mehmet-f-dogan}}; \\
+				\node{\faXingSquare};
+				 & \node{\href{https://www.xing.com/profile/MehmetFurkan_Dogan}{profile/MehmetFurkan\_Dogan}}; \\
+			};
+		\end{tikzpicture}
+
+		\ruleline{\textbf{languages}}
+		\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+			\matrix [
+				column 1/.style={anchor=center,contactIcon},
+				column 2/.style={anchor=west,align=left,contactIcon},
+				column sep=5pt,
+				row sep=5pt] (contact) {
+				\node{\flag{Turkey.png}};
+				 & \node{Turkish - Native}; \\
+				\node{\flag{US.png}};
+				 & \node{English - Fluent}; \\
+				\node{\flag{Germany.png}};
+				 & \node{German - Advanced}; \\
+			};
+		\end{tikzpicture}
+	\end{minipage}}
+\hfill
+\adjustbox{valign=t}{\begin{minipage}{11.3cm}
+		\vspace*{1cm}
+		\section*{professional experience}
+
+		\MySectionNoPic{2020-2022}{Software Engineer}{Berlin, Germany \flag{Germany.png}}{EDAG Group}{
+
+			\begin{itemize}
+				\item UI development for Volkswagen's various \\maintenance tools 
+				\item Backend design \& development for Opel's license management tools
+				\item Microservices' maintenance
+				\item Internal tools
+			\end{itemize}
+			\vspace{0.22cm}
+		}
+
+		\vspace*{0.22cm}
+
+		\MySectionNoPic{2019-2020}{Soldier}{Turkey \flag{Turkey.png}}{Turkish Armed Forces}{}
+
+		\vspace*{0.22cm}
+
+		\MySectionNoPic{2019}{Business Analyst}{Istanbul, Turkey \flag{Turkey.png}}{Tradeware Tech}{
+			\begin{itemize}
+				\item Development of custom logging libraries
+				\item UI updates of older projects
+				\item Bug tracking
+				\item Internal tools
+			\end{itemize}
+			\vspace{0.22cm}
+		}
+
+		\vspace*{0.22cm}
+
+		\MySectionNoPic{2018}{Intern Computer Engineer}{Ankara, Turkey \flag{Turkey.png}}{
+			Space Technologies Research Institute,\\Scientific and Technological Research Institution of Turkey
+		}{}
+
+		\vspace*{0.22cm}
+
+		\MySectionNoPic{2017}{Intern Computer Engineer}{Ankara, Turkey \flag{Turkey.png}}{Agem}{}
+
+				\section*{education}
+
+		\MySection{2020-2022}{THD.png}{Master of Engineering}{Deggendorf Institute of Technology}{Deggendorf, Germany \flag{Germany.png}}{Applied Computer Science}{\\}
+
+		\vspace*{0.22cm}
+
+		\MySection{2015-2019}{Bilkent.png}{Bachelor of Science}{Ihsan Dogramaci Bilkent University}{Ankara, Turkey \flag{Turkey.png}}{Computer Engineering}{\\}
+
+	\end{minipage}}
+
+\newpage
+
+\sidebar{sideBarColor!8}
+\newpageheader{titleBackColor}{Mehmet Furkan}{DOGAN}{}{white}
+
+\adjustbox{valign=t}{
+	\begin{minipage}{7.3cm}
+		\vspace*{0.4cm}
+
+
+		\ruleline{\textbf{soft skills}}
+		\vspace*{-0.5cm}
+		\begin{center}
+			\cvtag{Creativity}\cvtag{Flexibility}\cvtag{Self Confidence}\cvtag{Autonomy}\cvtag{Adaptability}\cvtag{Problem Solving}\cvtag{Hardworking}\cvtag{Communicative}\cvtag{Diplomacy}\cvtag{Good Listener}\cvtag{Patience}\cvtag{Emphaty}
+		\end{center}
+
+		\ruleline{\textbf{areas of interest}}
+		\vspace*{-0.5cm}
+		\begin{center}
+			\cvtag{Backend}\cvtag{Fullstack}\cvtag{Desktop}\cvtag{Embedded}\cvtag{IoT}\cvtag{Web Scraping}\cvtag{High Performance Computing}\cvtag{GPU Programming}\cvtag{Databases}\cvtag{Cloud}\cvtag{Scientific Computing}\cvtag{Data Science}\cvtag{Image Processing}\cvtag{Digital Signal Processing}
+		\end{center}
+
+		\ruleline{\textbf{other interests \& hobbies}}
+		\small
+		\begin{multicols}{2}
+			\begin{description}
+				\item  \flag{BassGuitar.png} Bass Guitar
+				\item  \flag{Basketball.png} Basketball
+				\item  \flag{Football.png} Football
+				\item  \flag{Soccer.png} Soccer
+				\item  \flag{Brackets.png} Coding
+				\item  \flag{Swimmer.png} Swimming
+				\item  \flag{Pot.png} Cooking
+				\item  \flag{Chess.png} Chess
+			\end{description}
+		\end{multicols}
+	\end{minipage}
+}
+%
+\hfill
+\adjustbox{valign=t}{
+	\begin{minipage}{11.3cm}
+		\vspace*{0.4cm}
+		\section*{software development skills}
+
+		\ITCcompetence{programming languages}{
+			\textbf{Java}\\
+			\textbf{Scala}\\
+			\textbf{go}\\
+			\textbf{Dart}\\
+			\textbf{C\#}\\
+			\textbf{C++}\\
+			\textbf{Javascript}\\
+			\textbf{python}\\
+			\textbf{PHP}\\
+			\textbf{R}\\
+			\textbf{MATLAB}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{databases}{
+			\textbf{SQLite}\\
+			\textbf{mongodb}\\
+			\textbf{MySQL/MariaDB}\\
+			\textbf{postgreSQL}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{frameworks}{
+			\textbf{Node.js}\\
+			\textbf{Flutter}\\
+			\textbf{grpc}\\
+			\textbf{Spring}\\
+			\textbf{WPF}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{operating systems}{
+			\textbf{Linux}\\
+			\textbf{Ubuntu}\\
+			\textbf{Debian}\\
+			\textbf{openSUSE}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{tools}{
+			\textbf{VS Code}\\
+			\textbf{intellij IDEA}\\
+			\textbf{Maven}\\
+			\textbf{git}\\
+			\textbf{Docker}\\
+			\textbf{Jira}\\
+			\textbf{Jenkins}\\
+			\textbf{vert.x}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{mark-up}{
+			\textbf{HTML}\\
+			\textbf{CSS}\\
+			\textbf{Markdown}\\
+			\textbf{\LaTeX}\\
+		}
+
+	\end{minipage}}
+
+
+\end{document}

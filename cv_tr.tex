@@ -1,0 +1,254 @@
+% Preamble
+% Compile with XeLateX
+
+\documentclass[11 pt,oneside,a4paper,titlepage]{article}
+\usepackage{preamble}
+\graphicspath{{PIC/}}
+\begin{document}
+
+\sidebar
+{sideBarColor!8}
+
+\simpleheader
+{titleBackColor}
+{Yük. Müh. Mehmet Furkan}
+{DOĞAN}
+{Bilgisayar Mühendisi}
+{white}
+
+\vspace*{3.49cm}
+\adjustbox
+{valign=t}
+{\begin{minipage}{7.3cm}
+		\vspace*{1.2cm}
+		\begin{center}
+			\begin{tikzpicture}
+				\node[
+					rectangle,
+					minimum size=\cvPictureWidth,
+					path picture={
+							\node at (path picture bounding box.center){
+								\includegraphics[width=\cvPictureWidth]{profile_pic.png}
+							};
+						}
+				]
+				{};
+			\end{tikzpicture}
+		\end{center}
+
+		\ruleline{\textbf{hakkımda}}
+		\begin{center}
+			Masaüstü ve backend geliştiricisi
+		\end{center}
+
+		\ruleline{\textbf{iletişim}}
+		\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+			\matrix [
+				column 1/.style={anchor=center,contactIcon},
+				column 2/.style={anchor=west,align=left,contactIcon},
+				column sep=5pt,
+				row sep=5pt] (contact) {
+				\node{\faEnvelope};
+				 & \node{\href{mailto:mehmet@mehmetfd.dev}{mehmet@mehmetfd.dev}}; \\
+				%\node{\faEnvelope};
+				% & \node{\href{mailto:mehmetfdogan.professional@gmail.com}{mehmetfdogan.professional@gmail.com}}; \\
+				\node{\faPhone};
+				 & \node{\href{tel:+491783916327}{+49 178 391 63 27 \flag{EU.png}}}; \\
+				%\node{\faPhone};
+				% & \node{\href{tel:+905433460188}{+90 543 346 01 88 \flag{Turkey.png}}}; \\
+				\node{\faMapMarker};
+				 & \node{10435 Berlin, Almanya \flag{Germany.png}}; \\
+				\node{\faMapMarker};
+				 & \node{16130 Bursa, Türkiye \flag{Turkey.png}}; \\
+				\node{\faGlobe};
+				 & \node{\href{https://www.mehmetfd.dev}{mehmetfd.dev}}; \\
+				\node{\faGithub};
+				 & \node{\href{https://github.com/mehmet-f-dogan}{mehmet-f-dogan}}; \\
+				\node{\faLinkedinSquare};
+				 & \node{\href{https://www.linkedin.com/in/mehmet-f-dogan}{in/mehmet-f-dogan}}; \\
+				\node{\faXingSquare};
+				 & \node{\href{https://www.xing.com/profile/MehmetFurkan_Dogan}{profile/MehmetFurkan\_Dogan}}; \\
+			};
+		\end{tikzpicture}
+
+		\ruleline{\textbf{diller}}
+		\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+			\matrix [
+				column 1/.style={anchor=center,contactIcon},
+				column 2/.style={anchor=west,align=left,contactIcon},
+				column sep=5pt,
+				row sep=5pt] (contact) {
+				\node{\flag{Turkey.png}};
+				 & \node{Türkçe - Anadil}; \\
+				\node{\flag{US.png}};
+				 & \node{İngilizce - Akıcı}; \\
+				\node{\flag{Germany.png}};
+				 & \node{Almanca - İleri}; \\
+			};
+		\end{tikzpicture}
+	\end{minipage}}
+\hfill
+\adjustbox{valign=t}{\begin{minipage}{11.3cm}
+		\vspace*{1cm}
+		\section*{iş deneyimi}
+
+		\MySectionNoPic{2020-2022}{Yazılım Mühendisi}{Berlin, Almanya \flag{Germany.png}}{EDAG Group}{
+
+			\begin{itemize}
+				\item Volkswagen'in çeşitli bakım araçları için kullanıcı arayüzü geliştirme
+				\item Opel'in lisans yönetim araçları için backend dizayn ve geliştirme
+				\item Mikroservislerin bakımı
+				\item Şirket iç araçları
+			\end{itemize}
+			\vspace{0.22cm}
+		}
+
+		\vspace*{0.22cm}
+
+		\MySectionNoPic{2019-2020}{Asker}{Türkiye \flag{Turkey.png}}{Türk Silahlı Kuvvetleri}{}
+
+		\vspace*{0.22cm}
+
+		\MySectionNoPic{2019}{İş Analisti}{İstanbul, Türkiye \flag{Turkey.png}}{Tradeware Tech}{
+			\begin{itemize}
+				\item Çeşitli raporlama kütüphaneleri geliştirme
+				\item Eski projeler için kullanıcı arayüzü güncellemeleri
+				\item Hata takip
+				\item Şirket iç araçları
+			\end{itemize}
+			\vspace{0.22cm}
+		}
+
+		\vspace*{0.22cm}
+
+		\MySectionNoPic{2018}{Stajyer Bilgisayar Müh.}{Ankara, Türkiye \flag{Turkey.png}}{
+			TÜBİTAK UZAY
+		}{}
+
+		\vspace*{0.22cm}
+
+		\MySectionNoPic{2017}{Stajyer Bilgisayar Müh.}{Ankara, Türkiye \flag{Turkey.png}}{Agem}{}
+
+		\section*{eğitim}
+
+		\MySection{2020-2022}{THD.png}{Yüksek Lisans}{Deggendorf Teknoloji Enstitüsü}{Deggendorf, Almanya \flag{Germany.png}}{Uygulamalı Bilgisayar Bilimi}{\\}
+
+		\vspace*{0.22cm}
+
+		\MySection{2015-2019}{Bilkent.png}{Lisans}{İhsan Doğramacı Bilkent Üniversitesi}{Ankara, Türkiye \flag{Turkey.png}}{Bilgisayar Mühendisliği}{\\}
+
+	\end{minipage}}
+
+\newpage
+
+\sidebar{sideBarColor!8}
+\newpageheader{titleBackColor}{Yük. Müh. Mehmet Furkan}{DOĞAN}{}{white}
+
+\adjustbox{valign=t}{
+	\begin{minipage}{7.3cm}
+		\vspace*{0.4cm}
+
+
+		\ruleline{\textbf{sosyal beceriler}}
+		\vspace*{-0.5cm}
+		\begin{center}
+			\cvtag{Yaratıcılık}\cvtag{Esneklik}\cvtag{Özgüven}\cvtag{Otonomi}\cvtag{Uyumluluk}\cvtag{Çözüm Odaklılık}\cvtag{Çalışkanlık}\cvtag{İletişimsellik}\cvtag{Diplomasi}\cvtag{İyi Dinleyicilik}\cvtag{Sabırlılık}\cvtag{Empati}
+		\end{center}
+
+		\ruleline{\textbf{ilgi alanları}}
+		\vspace*{-0.5cm}
+		\begin{center}
+			\cvtag{Backend}\cvtag{Fullstack}\cvtag{Masaüstü}\cvtag{Gömülü}\cvtag{IoT}\cvtag{Web Kazıma}\cvtag{Yüksek Performans Hesaplama}\cvtag{GPU Programlama}\cvtag{Veritabanları}\cvtag{Bulut}\cvtag{Bilimsel Hesaplama}\cvtag{Veri Bilimi}\cvtag{Görüntü İşleme}\cvtag{Dijital Sinyal İşleme}
+		\end{center}
+
+		\ruleline{\textbf{diğer ilgiler \& hobiler}}
+		\small
+		\begin{multicols}{2}
+			\begin{description}
+				\item  \flag{BassGuitar.png} Bas Gitar
+				\item  \flag{Basketball.png} Basketbol
+				\item  \flag{Football.png} Amerikan Futbolu
+				\item  \flag{Soccer.png} Futbol
+				\item  \flag{Brackets.png} Kodlama
+				\item  \flag{Swimmer.png} Yüzme
+				\item  \flag{Pot.png} Yemek Yapmak
+				\item  \flag{Chess.png} Satranç
+			\end{description}
+		\end{multicols}
+	\end{minipage}
+}
+%
+\hfill
+\adjustbox{valign=t}{
+	\begin{minipage}{11.3cm}
+		\vspace*{0.4cm}
+		\section*{yazılım geliştirme becerileri}
+
+		\ITCcompetence{programlama dilleri}{
+			\textbf{Java}\\
+			\textbf{Scala}\\
+			\textbf{go}\\
+			\textbf{Dart}\\
+			\textbf{C\#}\\
+			\textbf{C++}\\
+			\textbf{Javascript}\\
+			\textbf{python}\\
+			\textbf{PHP}\\
+			\textbf{R}\\
+			\textbf{MATLAB}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{veritabanları}{
+			\textbf{SQLite}\\
+			\textbf{mongodb}\\
+			\textbf{MySQL/MariaDB}\\
+			\textbf{postgreSQL}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{frameworkler}{
+			\textbf{Node.js}\\
+			\textbf{Flutter}\\
+			\textbf{grpc}\\
+			\textbf{Spring}\\
+			\textbf{WPF}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{işletim sistemleri}{
+			\textbf{Linux}\\
+			\textbf{Ubuntu}\\
+			\textbf{Debian}\\
+			\textbf{openSUSE}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{araçlar}{
+			\textbf{VS Code}\\
+			\textbf{intellij IDEA}\\
+			\textbf{Maven}\\
+			\textbf{git}\\
+			\textbf{Docker}\\
+			\textbf{Jira}\\
+			\textbf{Jenkins}\\
+			\textbf{vert.x}\\
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{mark-up}{
+			\textbf{HTML}\\
+			\textbf{CSS}\\
+			\textbf{Markdown}\\
+			\textbf{\LaTeX}\\
+		}
+
+	\end{minipage}}
+
+
+\end{document}
